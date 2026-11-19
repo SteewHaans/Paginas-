@@ -1,4 +1,4 @@
-/* ===== Colores y medidas ===== */
+
 :root {
   --ciruela: #2b1245;
   --violeta: #5b2a86;
@@ -18,7 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ===== Base ===== */
+
 body {
   margin: 0;
   background: var(--lila);
@@ -28,7 +28,7 @@ body {
   line-height: 1.7;
 }
 
-/* ===== Encabezado ===== */
+
 header {
   background: var(--ciruela);
   color: #fff;
@@ -47,7 +47,7 @@ header h1 {
   text-wrap: balance;
 }
 
-/* ===== Menú ===== */
+
 nav {
   position: sticky;
   top: 0;
@@ -96,7 +96,7 @@ nav a[href="#ayuda"]:hover {
   color: #fff;
 }
 
-/* ===== Slider de imágenes ===== */
+
 .container {
   padding: 2rem 0 0;
 }
@@ -112,7 +112,7 @@ nav a[href="#ayuda"]:hover {
   box-shadow: 0 1rem 2.5rem rgba(43, 18, 69, .28);
 }
 
-/* Degradado oscuro abajo para que se vean los puntos */
+
 .slider-wrapper::after {
   content: "";
   position: absolute;
@@ -138,7 +138,7 @@ nav a[href="#ayuda"]:hover {
   scroll-snap-align: start;
 }
 
-/* Puntos */
+
 .slider-nav {
   position: absolute;
   bottom: 1.2rem;
@@ -173,7 +173,7 @@ nav a[href="#ayuda"]:hover {
   opacity: 1;
 }
 
-/* Flechas */
+
 .flecha {
   position: absolute;
   top: 50%;
@@ -204,7 +204,7 @@ nav a[href="#ayuda"]:hover {
 .prev { left: 1rem; }
 .next { right: 1rem; }
 
-/* ===== Contenido ===== */
+
 main {
   padding-bottom: 5rem;
 }
@@ -247,7 +247,7 @@ strong {
   color: var(--ciruela);
 }
 
-/* ===== Listas ===== */
+
 ul,
 ol {
   padding-left: 1.6rem;
@@ -271,7 +271,7 @@ main li > p {
   margin-top: 0.25rem;
 }
 
-/* ===== Enlaces ===== */
+
 main a {
   color: var(--violeta);
   text-underline-offset: 0.2em;
@@ -288,7 +288,7 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
-/* ===== Recuadro de emergencia ===== */
+
 .emergencia {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -307,7 +307,7 @@ button:focus-visible {
   font-size: 1.15rem;
 }
 
-/* ===== Celulares ===== */
+
 @media (max-width: 40rem) {
   nav {
     position: static;
@@ -329,5 +329,35 @@ button:focus-visible {
   html,
   .slider {
     scroll-behavior: auto;
+  }
+}
+main > .sala-video {
+  max-width: 70rem;                 
+  width: calc(100% - 2.5rem);
+  margin-top: 2.5rem;
+}
+
+.sala-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 1rem;
+  border: 6px solid var(--ciruela);
+  box-shadow: 0 1.2rem 3rem rgba(43, 18, 69, .35);
+}
+
+.pie-video {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--violeta);
+  font-family: "Bricolage Grotesque", Arial, sans-serif;
+  font-size: .95rem;
+}
+
+@media (max-width: 40rem) {
+  .sala-video video {
+    border-width: 3px;
+    border-radius: .6rem;
   }
 }
