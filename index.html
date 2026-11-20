@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violencia contra el género</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Style.css">
@@ -12,6 +12,7 @@
 <body>
     <div id="contenido">
         <header>
+            <p class="institucion">Instituto Superior Tecnológico Vicente León</p>
             <h1>Violencia contra el género</h1>
         </header>
         <nav>
@@ -53,6 +54,16 @@
             </article>
             <article id="articulo2">
                 <h2 id="tipos">Tipos de violencia</h2>
+                 
+             <main>
+            <section class="sala-video">
+                   <video controls preload="metadata">
+                   <source src="./videos/Tipos y Modalidades De Violencia.mp4" type="video/mp4">
+                      Tu navegador no puede reproducir este video.
+                        </video>
+                             <p class="pie-video">Duración: 2 min 20 s</p>
+                     </section>
+                 </main>
                 <p>La violencia de género puede presentarse de diferentes maneras y no siempre es fácil reconocerla. Algunas formas dejan heridas visibles, mientras que otras afectan los sentimientos, la confianza y la tranquilidad de una persona. Entre los principales tipos de violencia encontramos:</p>
                 <ol>
                     <li>
@@ -107,6 +118,9 @@
                         <p>Después de la agresión, quien ejerció la violencia puede mostrar arrepentimiento, pedir perdón, hacer promesas de cambio o demostrar cariño para recuperar la confianza de la otra persona. Esto puede generar esperanza de que la situación mejorará. Sin embargo, si no existe un cambio real y sostenido, las conductas violentas pueden volver a repetirse.</p>
                     </li>
                 </ol>
+                <center>
+                <img src="./imagenes/ciclo-violencia.png" alt="Ejemplo del ciclo de violencia" width="650" height="400" >
+                </center>
             </article>
             <article id="articulo4">
                 <h2 id="mitos">Mitos y realidades</h2>
@@ -225,7 +239,7 @@
   const puntos = document.querySelectorAll('.slider-nav a');
   const wrapper = document.querySelector('.slider-wrapper');
 
-  const TIEMPO = 3000; // milisegundos
+  const TIEMPO = 3000; 
   let indice = 0;
   let intervalo;
 
