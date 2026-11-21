@@ -368,6 +368,16 @@ main > .sala-video {
   box-shadow: 0 1.2rem 3rem rgba(43, 18, 69, .35);
 }
 
+.figura {
+  display: block;
+  width: 100%;          
+  max-width: 44rem;     
+  height: auto;        
+  margin: 1.5rem auto;  
+  border-radius: .75rem;
+  box-shadow: 0 .5rem 1.5rem rgba(43, 18, 69, .2);
+}
+
 .pie-video {
   margin-top: 1rem;
   text-align: center;
